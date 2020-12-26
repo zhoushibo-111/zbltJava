@@ -1,0 +1,19 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: zsb_gateway
+zuul:
+  routes:
+    zsb_hotspot:
+      path: /hotspot/**
+      serviceId: zsb_hotspot
+      strip-prefix: true
+      sentiviteHeaders:
+      customSensitiveHeaders: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9001/eureka/
+  instance:
+    prefer-ip-address: true

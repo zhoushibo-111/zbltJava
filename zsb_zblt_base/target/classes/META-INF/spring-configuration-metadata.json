@@ -1,0 +1,11 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "mybatis-plus.typeAliasesPackage",
+      "type": "java.lang.String",
+      "description": "Description for mybatis-plus.typeAliasesPackage."
+    }
+  ],
+  "hints": []
+}
